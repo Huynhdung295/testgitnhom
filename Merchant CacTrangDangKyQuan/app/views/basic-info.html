@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Food - Quán của tôi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./../../assets/css/reset.css">
+    <link rel="stylesheet" href="./../../assets/css/variable.css">
+    <link rel="stylesheet" href="./../../assets/css/font.css">
+    <link rel="stylesheet" href="./../../assets/css/main-background.css">
+    <link rel="stylesheet" href="./../../assets/css/header.css">
+    <link rel="stylesheet" href="./../../assets/css/footer.css">
+    <link rel="stylesheet" href="./../../assets/css/side-bar.css">
+    <link rel="stylesheet" href="./../../assets/css/glass.css">
+    <link rel="stylesheet" href="./../../assets/css/button.css">
+    <link rel="stylesheet" href="./../../assets/css/input.css">
+
+    <link rel="stylesheet" href="./../../assets/css/shop-management.css">
+    <link rel="stylesheet" href="./../../assets/css/basic-infor.css">
+</head>
+<body>
+    <div class="container-fluid container-fluid-res">
+        <div class="info__merchant row">
+            <!-- side bar -->
+            <div class="side-bar border-top-0 glass-border-radius-0 col-lg-2 pt-4 mb-0" style="z-index: 4">
+                <div class="avatar d-flex align-items-center mb-5">
+                    <div class="avatar-wrapper mr-1">    
+                        <img src="./../../assets/images/logo.png" style="width: 50px" alt="">
+                    </div>
+                    <h5 class="m-0 mr-4 text-warning">CYBER FOOD</h5>
+                    <h3 class="text-right d-none close mb-0" style="cursor: pointer;" onclick="closeSidebar()"><i class="fa fa-times"></i></h3>
+                </div>
+    
+                <div class="side-bar-item-res">
+                    <a class="side-bar-option active d-flex py-3" href="./shop-management.html">
+                        <h6 class="pl-3 m-0"><i class="fa fa-user" style="width: 1.5rem"></i></h6>
+                        <h6 class="m-0">Quán của tôi</h6>
+                    </a>
+                    <a class="side-bar-option d-flex  py-3" href="#">
+                        <h6 class="pl-3 m-0"><i class="fa fa-shopping-cart" style="width: 1.5rem"></i></h6>
+                        <h6 class="m-0">Quản lý thông tin quán</h6>
+                    </a>
+                </div>
+            </div>
+    
+
+            <!-- main-content -->
+            <div class="info__card col-sm-12 col-md-9 col-lg-10 m-0 p-0 d-flex flex-column align-items-center">
+
+                <div class="glass-border-radius-0 border-left-0 m-0 p-4 position-fixed header-wrapper">
+                    <header class="h-100">
+                        <div class="position-fixed w-100 user-show" style="top:-100px; left:0; height: 60px; z-index:2">
+                            <div class="d-flex align-items-center justify-content-center glass-border-radius-0 w-100 h-100">
+                                <h1 class="mr-3 text-warning" style="cursor:pointer"><i class="fa fa-search"></i></h1>
+                                <h1 class="mr-3 text-warning" style="cursor:pointer"><i class="fa fa-bell"></i></h1>
+                                <img src="https://i.pravatar.cc/50" class="mr-3" alt="">
+                                <h6 class="m-0">Chris Alexendar <span><i class="fa fa-angle-down" style="cursor:pointer"></i></span></h6>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mx-4 h-100">
+                            <h1 class="hello">Xin chào, Chris</h1>
+                            <div class="d-none humbuger">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <h3 class="mb-0" onclick="openSidebar()" style="cursor: pointer;"><i class="fa fa-bars mr-3"></i></h3>
+                                    <h3 class="mb-0 text-warning">Cyber food</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center user-avatar">
+                                <h1 class="mr-3 text-warning" style="cursor:pointer"><i class="fa fa-search"></i></h1>
+                                <h1 class="mr-3 text-warning" style="cursor:pointer"><i class="fa fa-bell"></i></h1>
+                                <img src="https://i.pravatar.cc/50" class="mr-3" alt="">
+                                <h6 class="m-0">Chris Alexendar <span><i class="fa fa-angle-down" style="cursor:pointer"></i></span></h6>
+                            </div>
+                            <h3 class="d-none mb-0 down-arrow" onclick="showUserAvatar()"><i class="fa fa-angle-down" style="cursor:pointer"></i></h3>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="row justify-content-between container justify-content-between padding-res" style="margin-top: 100px;">
+                    <div class="col-12 glass p-4">
+                        
+                        <div class="d-flex justify-content-between mb-4">
+                            <h4 class="box-title">Đăng ký quán</h4>
+                        </div>
+                        
+                       <div class="content mb-4 mt-4">
+                            <div class="p-2">
+                                <h5 class="box-title">Tiến độ đăng ký</h5>
+                                <div class="d-flex align-items-center justify-content-between process">
+                                    <div class="process-container p-2 in-progress">
+                                        <h6 class="m-0">Thông tin quán - Cơ bản</h6>
+                                    </div>
+                                    <div class="process-container glass p-2">
+                                        <h6 class="m-0">Thông tin người - Đại diện</h6>
+                                    </div>
+                                    <div class="process-container glass p-2">
+                                        <h6 class="m-0">Thông tin quán - Chi tiết</h6>
+                                    </div>
+                                    <div class="process-container glass p-2">
+                                        <h6 class="m-0">Menu giao hàng - Ảnh chụp menu</h6>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+            
+            
+                       <div class="content content-form mb-4 mt-4">
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Tên quán <span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="d-flex align-items-center ten-quan">
+                                        <input type="text" class="form-control" placeholder="Tên">
+                                        <h5 class="m-0 mx-3">-</h5>
+                                        <input type="text" class="form-control" placeholder="Loại">
+                                        <h5 class="m-0 mx-3">-</h5>
+                                        <input type="text" class="form-control" placeholder="Đường phố">
+                                    </div>
+                                    <p class="text-muted m-0 mt-2"> <i class="fa fa-bell"></i> Tên quán nên được đặt theo thứ tự: Tên quán, món đặc trưng của quán và tên đường</p>
+                                </div>
+                            </div>
+            
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Số điện thoại liên hệ<span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="Số điện thoại bàn hoặc di động">
+                                </div>
+                            </div>
+            
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Thành phố<span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Tp.HCM</option>
+                                        <option value="">Hà Nội</option>
+                                        <option value="">Hải Phòng</option>
+                                        <option value="">Nha Trang</option>
+                                        <option value="">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+            
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Quận<span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Chọn quận</option>
+                                        <option value="">Quận 1</option>
+                                        <option value="">Quận 2</option>
+                                        <option value="">Quận 3</option>
+                                        <option value="">Quận 4</option>
+                                        <option value="">Quận 5</option>
+                                    </select>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Số nhà, đường/ phố<span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="Đường/ phố">
+                                    <button class="btn btn__white btn-hover-effect mt-3">Kiểm tra bản đồ</button>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="m-0">Định vị trên bản đồ</h6>
+                                    <p class="text-muted">(Theo như địa chỉ ghi trên)</p>
+                                </div>
+                                <div class="col-lg-9">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d251637.95196238213!2d105.6189045!3d9.779349!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1626234003602!5m2!1svi!2s" style="border:0; width: 100%; height: auto;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-end">
+                                <div class="col-12 d-flex justify-content-end bottom-btn">
+                                    <a href="./search-shop.html"><button class="btn btn-secondary mt-3 mr-4">Quay lại</button></a>
+                                    <a href="./representative.html"><button class="btn btn__bg-main btn-hover-effect mt-3">Lưu và Tiếp tục</button></a>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="glass-border-radius-0 border-left-0 m-0 p-4 w-100">
+                    <footer>
+                        <div class="d-flex justify-content-between mx-3">
+                            <p class="m-0">© 2021 Cyber Food Delivery - Cyber Learn</p>
+                            <tt>Bản quyền thuộc về <a href="https://cybersoft.edu.vn/">Cybersoft</a></tt>
+                        </div>
+                    </footer>
+                </div>   
+            </div>
+        </div>  
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  
+    <script>
+        const openSidebar = () => {
+            document.querySelector(".side-bar").classList.add("opend")
+        }
+
+        const closeSidebar = () => {
+            document.querySelector(".side-bar").classList.remove("opend")
+        }
+
+
+        const showUserAvatar = () => {
+            document.querySelector(".user-show").classList.toggle("show")
+            document.querySelector(".down-arrow i").classList.toggle("rotate")
+        }
+
+    </script>
+
+</body>
+</html>
+
+

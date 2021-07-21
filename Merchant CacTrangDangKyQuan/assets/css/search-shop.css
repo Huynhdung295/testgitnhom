@@ -1,0 +1,44 @@
+
+.form-group-1, .form-group-2, .form-group-3 {
+    margin: 0 .5rem;
+}
+
+.form-group-1, .form-group-2 {
+    flex: 3;
+}
+
+.form-group-3 {
+    flex: 1;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .form-search {
+        flex-flow: column;
+    }
+
+    .form-group-1, .form-group-2, .form-group-3 {
+        width: 100%;
+        margin: 0.5rem 0 ;
+    } 
+
+    .form-group-3 button { 
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    input.form-control, select.form-control {
+        margin-left: 0!important;
+    }
+}
+
+
+
+
+
+
+
+

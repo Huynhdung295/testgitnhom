@@ -1,0 +1,79 @@
+/* btn__bg-main*/
+.btn__bg-main {
+    background: var(--main-color);
+}
+
+/* btn__white*/
+.btn__white {
+    background: var(--color-light-1);
+    color: var(--color-dark-1)!important;
+    border-color: var(--main-color);
+}
+
+
+/* btn__fb*/
+.btn__fb {
+    background: var(--btn__fb-color);
+    color: var(--color-light-1);
+}
+
+/* btn__gg*/
+.btn__gg {
+    background: var(--btn__gg-color);
+    color: var(--color-light-1);
+}
+
+
+
+
+/* button hover effect */
+.btn-hover-effect { 
+    position: relative;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(0.26, 0.1, 0.27, 0.55);
+}
+
+.btn-hover-effect::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    background-color: var(--hover-effect-color);
+    transition: all 1s;
+    opacity: .5;
+    z-index: -1;
+}
+
+.btn-hover-effect:hover::before {
+    opacity: 1;
+    transform: scale(110);
+    color: var(--color-light-1);
+}
+
+.btn-hover-effect:hover {
+    color: var(--color-light-1);
+    transform: scale(0.99);
+}
+
+
+.side-bar-option {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: var(--color-dark-1)!important;
+    text-decoration: none!important;
+}
+
+.side-bar-option:hover {
+    background-color: rgba(255, 255, 255, 0.712);
+    border-color: var(--main-color);
+    box-shadow: 0px 0px 20px 0px #8b8bb725;
+}
+
+.side-bar-option.active {
+    background: var(--bg-glass-linear-gradient-1);
+    border: 1px solid var(--color-light-1);
+}
