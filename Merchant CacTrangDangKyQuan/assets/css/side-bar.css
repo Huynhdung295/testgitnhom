@@ -1,0 +1,33 @@
+.avatar-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .close {
+        display: block!important;
+    }
+
+    .avatar img {
+        width: 40px!important;
+    }
+
+    .avatar h4 {
+        font-size: 1.3rem!important;
+    }
+
+    .side-bar {
+        position: fixed;
+        left: -260px;
+        height: 100vh;
+        width: 250px!important;
+        flex: unset;
+        max-width: unset;
+        transition: all .3s ease-in-out;
+    }
+
+    .side-bar.opend {
+        left: 0;
+    }
+}

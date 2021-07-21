@@ -1,0 +1,18 @@
+
+.form-control {
+    background: unset;
+    border-color: var(--color-light-1);
+    color: var(--color-dark-1);
+    height: 2.7rem;
+}
+
+.form-control:focus {
+    background: unset;
+    color: var(--color-dark-1);
+    border: 1px solid var(--main-color);
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: var(--color-dark-1);
+}
