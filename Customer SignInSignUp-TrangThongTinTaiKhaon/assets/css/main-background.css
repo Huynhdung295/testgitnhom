@@ -1,0 +1,7 @@
+body {    
+    background: var(--bg-main-fallback-1);  /* fallback for old browsers */
+    background: var(--webkit-linear-gradient-1); /* Chrome 10-25, Safari 5.1-6 */
+    background: var(--bg-main-linear-gradient-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: var(--color-dark-1);
+}

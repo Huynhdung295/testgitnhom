@@ -1,0 +1,47 @@
+.signIn__customer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+    margin-top: 10rem;
+}
+
+.signIn__customer h2{
+    font-size: 1.5rem;
+}
+
+.signIn__card {
+    height: 580px;
+    width: 370px;
+    color: var(--color-dark-1);
+}
+
+
+.btn__fb, .btn__gg {
+    font-size: .8rem;
+    text-align: center;
+    position: relative;
+}
+
+.btn__fb > i, .btn__gg > i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: .9rem;
+}
+
+
+
+
+@media screen and (max-width: 327px) {
+    .signIn__card {
+        height: 600px;
+    }
+
+    .rememberMe {
+        flex-flow: column;
+    }
+}
+

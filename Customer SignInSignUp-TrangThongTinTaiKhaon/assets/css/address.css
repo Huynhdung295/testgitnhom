@@ -1,0 +1,154 @@
+.receipt__customer {
+    margin-top: 85px;
+}
+
+.side-bar {
+    /* max-height: calc(100vh - 85px); */
+}
+
+.avatar-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.receipt__card {
+    height: calc(100vh - 85px);
+    overflow: scroll;
+}
+
+
+table {
+    width: 100%;
+    min-height: 10rem;
+    margin-top: 2rem;
+}
+
+table thead {
+    border-bottom: 1px solid #F7B614;
+}
+
+table .ten {
+    width: 20%;
+}
+table .address {
+    width: 40%;
+}
+
+table .phone {
+    width: 20%;
+}
+
+table .action {
+    width: 20%;
+}
+
+
+/* modal */
+
+#themModal label {
+    font-size: 1rem;
+}
+
+#themModal .modal-dialog {
+    max-width: unset;
+    margin-top: 100px;
+}
+
+.modal-content {
+    background: linear-gradient(57deg, #e9ece513 0%, #ece9c22a 48%, #edd2a82f 78% , #f3bf9e33 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+@media screen and (max-width: 992px){
+    .receipt__card .glass {
+        overflow: hidden;
+    }
+
+    table {
+        width: 680px;
+    }
+    .table-res {
+        overflow-x: scroll;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .side-bar {
+        padding-top: 1.5rem!important;
+    }
+    .avatar {
+        justify-content: center;
+        margin-bottom: 2rem!important;
+    }
+    .receipt__card {
+        height: unset;
+        overflow: unset;
+    }
+
+    .receipt__card .glass {
+        padding-left: 1rem!important;
+        padding-right: 1rem!important;
+    }
+
+    .change-avatar-res {
+        flex-flow: column;
+    }
+
+    .avatar-wrapper {
+        margin-bottom: 1rem;
+    }
+
+    .avatar-wrapper + div {
+        align-self: flex-start;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    footer > div.mx-5 {
+        flex-flow: column;
+        margin: 0!important;
+    }
+
+    /* input.form-control, select.form-control {
+        margin-left: 15px;
+    } */
+
+    #themModal .modal-dialog {
+        width: unset!important;
+        margin: 2rem;
+        margin-top: 100px;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    .btn-res {
+        width: 100%;
+        margin-top: .5rem;
+    }
+}
+
+
+
+
+
+
+
+/* fix bug header */
+@media screen and (min-width: 1200px){
+    .navbar-nav li a {
+        padding: 35px 12px!important;
+    }
+}

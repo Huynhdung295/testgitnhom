@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Food - Quán của tôi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./../../assets/css/reset.css">
+    <link rel="stylesheet" href="./../../assets/css/variable.css">
+    <link rel="stylesheet" href="./../../assets/css/font.css">
+    <link rel="stylesheet" href="./../../assets/css/main-background.css">
+    <link rel="stylesheet" href="./../../assets/css/header.css">
+    <link rel="stylesheet" href="./../../assets/css/footer.css">
+    <link rel="stylesheet" href="./../../assets/css/side-bar.css">
+    <link rel="stylesheet" href="./../../assets/css/glass.css">
+    <link rel="stylesheet" href="./../../assets/css/button.css">
+    <link rel="stylesheet" href="./../../assets/css/input.css">
+
+    <link rel="stylesheet" href="./../../assets/css/shop-management.css">
+    <link rel="stylesheet" href="./../../assets/css/detail-info.css">
+</head>
+<body>
+    <div class="container-fluid container-fluid-res">
+        <div class="info__merchant row">
+            <!-- side bar -->
+            <div class="side-bar border-top-0 glass-border-radius-0 col-lg-2 pt-4 mb-0" style="z-index: 4">
+                <div class="avatar d-flex align-items-center mb-5">
+                    <div class="avatar-wrapper mr-1">    
+                        <img src="./../../assets/images/logo.png" style="width: 50px" alt="">
+                    </div>
+                    <h5 class="m-0 mr-4 text-warning">CYBER FOOD</h5>
+                    <h3 class="text-right d-none close mb-0" style="cursor: pointer;" onclick="closeSidebar()"><i class="fa fa-times"></i></h3>
+                </div>
+    
+                <div class="side-bar-item-res">
+                    <a class="side-bar-option active d-flex py-3" href="./shop-management.html">
+                        <h6 class="pl-3 m-0"><i class="fa fa-user" style="width: 1.5rem"></i></h6>
+                        <h6 class="m-0">Quán của tôi</h6>
+                    </a>
+                    <a class="side-bar-option d-flex  py-3" href="#">
+                        <h6 class="pl-3 m-0"><i class="fa fa-shopping-cart" style="width: 1.5rem"></i></h6>
+                        <h6 class="m-0">Quản lý thông tin quán</h6>
+                    </a>
+                </div>
+            </div>
+    
+
+            <!-- main-content -->
+            <div class="info__card col-sm-12 col-md-9 col-lg-10 m-0 p-0 d-flex flex-column align-items-center">
+
+                <div class="glass-border-radius-0 border-left-0 m-0 p-4 position-fixed header-wrapper">
+                    <header class="h-100">
+                        <div class="position-fixed w-100 user-show" style="top:-100px; left:0; height: 60px; z-index:2">
+                            <div class="d-flex align-items-center justify-content-center glass-border-radius-0 w-100 h-100">
+                                <h1 class="mr-3 text-warning" style="cursor:pointer"><i class="fa fa-search"></i></h1>
+                                <h1 class="mr-3 text-warning" style="cursor:pointer"><i class="fa fa-bell"></i></h1>
+                                <img src="https://i.pravatar.cc/50" class="mr-3" alt="">
+                                <h6 class="m-0">Chris Alexendar <span><i class="fa fa-angle-down" style="cursor:pointer"></i></span></h6>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mx-4 h-100">
+                            <h1 class="hello">Xin chào, Chris</h1>
+                            <div class="d-none humbuger">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <h3 class="mb-0" onclick="openSidebar()" style="cursor: pointer;"><i class="fa fa-bars mr-3"></i></h3>
+                                    <h3 class="mb-0 text-warning">Cyber food</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center user-avatar">
+                                <h1 class="mr-3 text-warning" style="cursor:pointer"><i class="fa fa-search"></i></h1>
+                                <h1 class="mr-3 text-warning" style="cursor:pointer"><i class="fa fa-bell"></i></h1>
+                                <img src="https://i.pravatar.cc/50" class="mr-3" alt="">
+                                <h6 class="m-0">Chris Alexendar <span><i class="fa fa-angle-down" style="cursor:pointer"></i></span></h6>
+                            </div>
+                            <h3 class="d-none mb-0 down-arrow" onclick="showUserAvatar()"><i class="fa fa-angle-down" style="cursor:pointer"></i></h3>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="row justify-content-between container justify-content-between padding-res" style="margin-top: 100px;">
+                    <div class="col-12 glass p-4">
+                        
+                        <div class="d-flex justify-content-between mb-4">
+                            <h4 class="box-title">Đăng ký quán</h4>
+                        </div>
+                        
+                        <div class="content mb-4 mt-4">
+                            <div class="p-2">
+                                <h5 class="box-title">Tiến độ đăng ký</h5>
+                                <div class="d-flex align-items-center justify-content-between process">
+                                    <div class="process-container p-2 done">
+                                        <h6 class="m-0">Thông tin quán - Cơ bản</h6>
+                                    </div>
+                                    <div class="process-container p-2 done">
+                                        <h6 class="m-0">Thông tin người - Đại diện</h6>
+                                    </div>
+                                    <div class="process-container p-2 in-progress">
+                                        <h6 class="m-0">Thông tin quán - Chi tiết</h6>
+                                    </div>
+                                    <div class="process-container p-2 glass">
+                                        <h6 class="m-0">Menu giao hàng - Ảnh chụp menu</h6>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+            
+            
+                       <div class="content content-form mb-4 mt-4">
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Thời gian mở cửa <span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="d-flex align-items-center">
+                                        <input type="text" class="form-control" placeholder="Từ">
+                                        <h5 class="m-0 mx-3">-</h5>
+                                        <input type="text" class="form-control" placeholder="Đến">
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="m-0">Từ khoá tìm kiếm<span class="text-danger">*</span></h6>
+                                    <p class="text-muted">(Từ khoá được phân cách bằng dấu phẩy. Tối đa 20 ký tự)</p>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="vd: Gà nướng, Mì ý ...">
+                                </div>
+                            </div>
+            
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="m-0">Miêu tả về quán<span class="text-danger">*</span></h6>
+                                    <p class="text-muted">(Tối đa 156 ký tự)</p>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="Miêu tả về quán">
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="m-0">Ảnh đại diện quán<span class="text-danger">*</span></h6>
+                                    <p class="text-muted">550 x 550px, tối đa 1Mb</p>
+                                </div>
+                                <div class="col-lg-9 d-flex">
+                                    <div class="mr-2 text-center">
+                                        <label for="avarta-store" class="addPhoto-frame"><i class="fa fa-plus"></i></label>
+                                        <input id="avarta-store" type="file" class="d-none">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="m-0">Ảnh bìa<span class="text-danger">*</span></h6>
+                                    <p class="text-muted">960 x 550px, tối đa 1Mb</p>
+                                </div>
+                                <div class="col-lg-9 d-flex">
+                                    <div class="mr-2 text-center">
+                                        <label for="cover-photo" class="addPhoto-frame addPhoto-cover-frame"><i class="fa fa-plus"></i></label>
+                                        <input id="cover-photo" type="file" class="d-none">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="m-0">Ảnh mặt tiền quán <span class="text-danger">*</span></h6>
+                                    <p class="text-muted">tối đa 1Mb</p>
+                                </div>
+                                <div class="col-lg-9 d-flex">
+                                    <div>
+                                        <label for="face-store" class="addPhoto-frame"><i class="fa fa-plus"></i></label>
+                                        <input id="face-store" type="file" class="d-none">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Loại hình quán <span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div>
+                                        <input type="checkbox" id="nhaHang">
+                                        <label class="ml-2" for="nhaHang"><h6 class="m-0 font-weight-normal">Nhà hàng</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="quanAn">
+                                        <label class="ml-2" for="quanAn"><h6 class="m-0 font-weight-normal">Quán ăn</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="quanCafe">
+                                        <label class="ml-2" for="quanCafe"><h6 class="m-0 font-weight-normal">Quán café</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="buffet">
+                                        <label class="ml-2" for="buffet"><h6 class="m-0 font-weight-normal">Buffet</h6></label>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Đối tượng khách <span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div>
+                                        <input type="checkbox" id="sinhVien">
+                                        <label class="ml-2" for="sinhVien"><h6 class="m-0 font-weight-normal">Sinh viên</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="giaDinh">
+                                        <label class="ml-2" for="giaDinh"><h6 class="m-0 font-weight-normal">Gia đình</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="capDoi">
+                                        <label class="ml-2" for="capDoi"><h6 class="m-0 font-weight-normal">Cặp đôi</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="nhanVienVP">
+                                        <label class="ml-2" for="nhanVienVP"><h6 class="m-0 font-weight-normal">Nhân viên văn phòng</h6></label>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Thời gian <span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div>
+                                        <input type="checkbox" id="sang">
+                                        <label class="ml-2" for="sang"><h6 class="m-0 font-weight-normal">Buổi sáng</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="trua">
+                                        <label class="ml-2" for="trua"><h6 class="m-0 font-weight-normal">Buổi trưa</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="xe">
+                                        <label class="ml-2" for="xe"><h6 class="m-0 font-weight-normal">Buổi xế</h6></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="toi">
+                                        <label class="ml-2" for="toi"><h6 class="m-0 font-weight-normal">Buổi tối</h6></label>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="m-0">Món đặc trưng<span class="text-danger">*</span></h6>
+                                    <p class="text-muted">Tối đa 3 món</p>
+                                </div>
+                                <div class="col-lg-9 col-9-res">
+                                    <div class="row justify-content-between  detail-res">
+                                        <input id="monDacTrung" type="text" class="form-control col-8" placeholder="Món đặc trưng">
+                                        <button class="btn btn__white btn-hover-effect" onclick="themMon()">Thêm món</button>
+                                    </div>
+                                    <p class="errorTrung text-danger mt-2"></p>
+                                    <div id="showMonDacTrung">
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Ẩm thực<span class="text-danger">*</span></h6>
+                                </div>
+                                <div class="col-lg-9 col-9-res">
+                                    <div class="row justify-content-between  detail-res">
+                                        <input id="monAmThuc" type="text" class="form-control col-8" placeholder="Ẩm thực">
+                                        <button class="btn btn__white btn-hover-effect" onclick="themMonAmThuc()">Thêm món</button>
+                                    </div>
+                                    <p class="errorAmThuc text-danger mt-2"></p>
+                                    <div id="showAmThuc">
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-start">
+                                <div class="col-lg-3">
+                                    <h6 class="">Phí gửi xe <span class="text-danger">*</span</h6>
+                                </div>
+                                <div class="col-lg-9 p-0">
+                                    <input type="text" class="form-control" placeholder="Vd: 10.000">
+                                </div>
+                            </div>
+            
+                            <div class="row container p-3 align-items-end">
+                                <div class="col-12 d-flex justify-content-end bottom-btn">
+                                    <a href="./representative.html"><button class="btn btn-secondary mt-3 btn-hover-effect mr-4">Quay lại</button></a>
+                                    <a href="./menu-photo.html"><button class="btn btn__bg-main btn-hover-effect mt-3">Lưu và Tiếp tục</button></a>
+                                </div>
+            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                </div>
+
+
+                <div class="glass-border-radius-0 border-left-0 m-0 p-4 w-100">
+                    <footer>
+                        <div class="d-flex justify-content-between mx-3">
+                            <p class="m-0">© 2021 Cyber Food Delivery - Cyber Learn</p>
+                            <tt>Bản quyền thuộc về <a href="https://cybersoft.edu.vn/">Cybersoft</a></tt>
+                        </div>
+                    </footer>
+                </div>   
+            </div>
+        </div>  
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  
+    <script>
+        const openSidebar = () => {
+            document.querySelector(".side-bar").classList.add("opend")
+        }
+
+        const closeSidebar = () => {
+            document.querySelector(".side-bar").classList.remove("opend")
+        }
+
+
+        const showUserAvatar = () => {
+            document.querySelector(".user-show").classList.toggle("show")
+            document.querySelector(".down-arrow i").classList.toggle("rotate")
+        }
+
+
+
+
+        let mangMonDacTrung = []
+        const themMon = () => {
+            const mon = document.getElementById("monDacTrung").value
+            if (mon.trim()) {
+                let index = mangMonDacTrung.findIndex(monMang => monMang === mon)
+                if (index===-1) {
+                    mangMonDacTrung.push(mon)
+                    if (mangMonDacTrung.length <= 3) {
+                        document.getElementById("showMonDacTrung").innerHTML =  renderMonDacTrung()
+                    } else {
+                        document.querySelector(".errorTrung").innerHTML = `* Tối đa thêm 3 món`
+                    }
+                } 
+                if (index!==-1) document.querySelector(".errorTrung").innerHTML = `* Món đã tồn tại`
+            }
+        }
+
+        const renderMonDacTrung = () => {
+            return mangMonDacTrung.reduce((arr, curr, index) => {
+                return arr += `<h6 class="m-0 my-2">${index + 1}. ${curr}</h6>`
+            }, "")
+        }
+
+
+
+
+        let mangMonAmThuc = []
+        const themMonAmThuc = () => {
+            const monAmThuc = document.getElementById("monAmThuc").value
+            if (monAmThuc.trim()) {
+                let index = mangMonAmThuc.findIndex(monMang => monMang === monAmThuc)
+                if (index===-1) {
+                    mangMonAmThuc.push(monAmThuc)
+                    document.getElementById("showAmThuc").innerHTML =  renderMonAmThuc()
+                } 
+                if (index!==-1) document.querySelector(".errorAmThuc").innerHTML = `* Món đã tồn tại`
+            }
+        }
+
+        const renderMonAmThuc = () => {
+            return mangMonAmThuc.reduce((arr, curr, index) => {
+                return arr += `<h6 class="m-0 my-2">${index + 1}. ${curr}</h6>`
+            }, "")
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
